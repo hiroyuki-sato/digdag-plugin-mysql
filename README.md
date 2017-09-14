@@ -28,7 +28,7 @@ _export:
   download_file: test.txt
 ```
 
-Register private and public key into secrets.
+Register mysql password into secrets.
 
 local mode 
 
