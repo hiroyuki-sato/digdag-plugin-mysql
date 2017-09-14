@@ -1,0 +1,24 @@
+*~
+/.gradle
+/build
+.java-version
+.digdag
+
+# git
+!.gitkeep
+.git
+
+# intellij idea
+*.iml
+*.ipr
+*.iws
+*.idea
+
+# eclipse
+.classpath
+.project
+.settings
+/bin/
+
+#
+/sample_local
