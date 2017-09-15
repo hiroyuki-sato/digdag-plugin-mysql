@@ -35,6 +35,8 @@ dependencies {
     apt "org.immutables:value:2.3.9"
 
     compile 'mysql:mysql-connector-java:5.1.44'
+
+    testCompile  "io.digdag:digdag-tests:" + digdagVersion
 }
 
 sourceSets {
