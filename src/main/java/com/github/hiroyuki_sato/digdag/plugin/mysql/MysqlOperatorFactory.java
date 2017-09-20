@@ -36,10 +36,10 @@ public class MysqlOperatorFactory
         return new MysqlOperator(context,templateEngine);
     }
 
-    private class MysqlOperator
+    static class MysqlOperator
             extends AbstractJdbcJobOperator<MysqlConnectionConfig>
     {
-        public MysqlOperator(OperatorContext context, TemplateEngine templateEngine)
+        MysqlOperator(OperatorContext context, TemplateEngine templateEngine)
         {
             super(context, templateEngine);
         }
