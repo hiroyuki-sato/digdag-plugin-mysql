@@ -13,7 +13,7 @@ apply plugin: 'net.ltgt.apt'
 group = 'com.github.hiroyuki-sato'
 version = '0.1.0'
 
-def digdagVersion = '0.9.16'
+def digdagVersion = '0.9.24'
 
 repositories {
     mavenCentral()

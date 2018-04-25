@@ -1,5 +1,6 @@
 package com.github.hiroyuki_sato.digdag.plugin.mysql;
 
+import io.digdag.client.config.Config;
 import io.digdag.spi.OperatorFactory;
 import io.digdag.spi.OperatorProvider;
 import io.digdag.spi.Plugin;
@@ -24,9 +25,12 @@ public class MysqlPlugin implements Plugin {
         @Inject
         protected TemplateEngine templateEngine;
 
+        @Inject
+        protected Config systemConfig;
+
         @Override
         public List<OperatorFactory> get() {
-            return Arrays.asList(new MysqlOperatorFactory(templateEngine));
+            return Arrays.asList(new MysqlOperatorFactory(systemConfig,templateEngine));
         }
     }
 }
