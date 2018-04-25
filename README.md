@@ -1,6 +1,6 @@
 # digdag-plugin-mysql
 
-Digdag `mysql>` operator plugin to execute a query on MySQL sserver.
+Digdag `mysql>` operator plugin to execute a query on MySQL server.
 
 ## configuration
 
@@ -12,10 +12,10 @@ _export:
     repositories:
     repositories:
       #- file://${repos}
-      - file:///path/to/digdag-plugin-mysql/build/repo
-      # - https://jitpack.io
+      #- file:///path/to/digdag-plugin-mysql/build/repo
+      - https://jitpack.io
     dependencies:
-      - com.github.hiroyuki-sato:digdag-plugin-mysql:0.1.0
+      - com.github.hiroyuki-sato:digdag-plugin-mysql:0.1.1
 
   mysql:
     host: localhost
