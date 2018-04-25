@@ -16,12 +16,14 @@ public class MysqlOperatorFactory
     private static final String OPERATOR_TYPE = "mysql";
 
     private final TemplateEngine templateEngine;
+    private final Config systemConfig;
 
     private static Logger logger = LoggerFactory.getLogger(MysqlOperatorFactory.class);
 
-    public MysqlOperatorFactory(TemplateEngine templateEngine)
+    public MysqlOperatorFactory(Config systemConfig,TemplateEngine templateEngine)
     {
         this.templateEngine = templateEngine;
+        this.systemConfig = systemConfig;
     }
 
     @Override
@@ -33,15 +35,15 @@ public class MysqlOperatorFactory
     @Override
     public Operator newOperator(OperatorContext context)
     {
-        return new MysqlOperator(context,templateEngine);
+        return new MysqlOperator(systemConfig,context,templateEngine);
     }
 
     static class MysqlOperator
             extends AbstractJdbcJobOperator<MysqlConnectionConfig>
     {
-        MysqlOperator(OperatorContext context, TemplateEngine templateEngine)
+        MysqlOperator(Config systemConfig,OperatorContext context, TemplateEngine templateEngine)
         {
-            super(context, templateEngine);
+            super(systemConfig,context, templateEngine);
         }
 
         @Override
