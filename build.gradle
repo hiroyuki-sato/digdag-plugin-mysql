@@ -11,7 +11,7 @@ apply plugin: 'idea'
 apply plugin: 'net.ltgt.apt'
 
 group = 'com.github.hiroyuki-sato'
-version = '0.1.0'
+version = '0.1.1'
 
 def digdagVersion = '0.9.24'
 
