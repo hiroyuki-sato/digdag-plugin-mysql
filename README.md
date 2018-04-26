@@ -2,6 +2,8 @@
 
 Digdag `mysql>` operator plugin to execute a query on MySQL server.
 
+**Caution**: Update query still development.
+
 ## configuration
 
 [Release list](https://github.com/hiroyuki-sato/digdag-plugin-mysql/releases).
